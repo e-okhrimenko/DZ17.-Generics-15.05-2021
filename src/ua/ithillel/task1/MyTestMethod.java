@@ -12,11 +12,11 @@ public class MyTestMethod {
         return result;
     }
 
-    public <T extends Comparable<T>> double calcSum(T[] arr, T value) {
+    public <T extends Number & Comparable<T>> double calcSum(T[] arr, T value) {
         double result = 0.0;
         for (T t : arr) {
             if (t.compareTo(value) > 0) {
-                result += ((Number) t).doubleValue();
+                result += t.doubleValue();
             }
         }
         return result;
