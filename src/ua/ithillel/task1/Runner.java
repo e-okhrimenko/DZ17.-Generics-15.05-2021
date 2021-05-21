@@ -15,7 +15,7 @@ public class Runner {
 
         System.out.println("\nПРАКТИЧЕСКАЯ РАБОТА 2.");
         MyTestMethod myTestMethod = new MyTestMethod();
-        System.out.println("myTestMethod.calcSum(intArr, 5): " + myTestMethod.calcSum(intArr, 5));
-        System.out.println("myTestMethod.calcSum(dobArr, 5.0): " + myTestMethod.calcSum(dobArr, 5.0));
+        System.out.format("myTestMethod.calcSum(intArr, 5): %.2f\n", myTestMethod.calcSum(intArr, 5));
+        System.out.format("myTestMethod.calcSum(dobArr, 5.0): %.2f\n", myTestMethod.calcSum(dobArr, 5.0));
     }
 }

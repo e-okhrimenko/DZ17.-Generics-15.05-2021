@@ -16,11 +16,9 @@ public class MyTestMethod {
         double result = 0.0;
         for (T t : arr) {
             if (t.compareTo(value) > 0) {
-                if (value instanceof Number && t instanceof Number) {
-                    result += ((Number) t).doubleValue();
-                }
+                result += ((Number) t).doubleValue();
             }
         }
-        return ((double) ((int) (result * 100.0))) / 100.0;
+        return result;
     }
 }
